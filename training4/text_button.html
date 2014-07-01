@@ -1,0 +1,20 @@
+// ボタンを押すとテキストボックスに入力された文字がＨＴＭＬのspanタグ内に表示される
+
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+<script type="text/javascript">
+    function OK() {
+        text = document.getElementById('txt_in').value;
+        document.getElementById('out').innerHTML = text;
+    }
+</script>
+</head>    
+<body>
+   <form>    
+      <input id="txt_in" type="text">
+      <input type="button" value="押す" onclick="OK()">
+   </form>
+   <span id="out"></span>
+</body>    
+</html>
