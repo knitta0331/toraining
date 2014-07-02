@@ -1,0 +1,37 @@
+// addEventListenerを、headタグの中のscriptタグで定義する(onload)
+
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+<script type="text/javascript">
+    function OK(){
+        var text = document.getElementById('txt_in').value;
+        document.getElementById('out').innerHTML = text;
+    }
+    function onload() {   
+    var push = document.getElementById('btn');   
+    push.addEventListener('click', OK, false);   
+    }   
+</script>
+</head> 
+<body onload="onload();">
+   <form>    
+      <input type="text"id="txt_in">
+      <input type="button" id="btn" value="押す">
+   </form>
+   <span id="out"></span>    
+</body>    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
