@@ -1,0 +1,36 @@
+// jQueryを使って定義する
+
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="jquery-2.1.1.js"></script>
+<script type="text/javascript">
+$(function() {
+ $('#btn').on('click', function() {
+     var text = $('#txt_in').val();
+     $('#out').html(text);
+ })
+});
+</script>
+</head> 
+<body>
+   <form>    
+      <input type="text"id="txt_in">
+      <input type="button" id="btn" value="押す">
+   </form>
+   <span id="out"></span>    
+</body>    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
